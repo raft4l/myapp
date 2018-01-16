@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Showcase</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar id="SB"  (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list >
+      <ion-item *ngFor="let c of categories">
+        {{ c.title }}
+      </ion-item>
+    </ion-list>
+<ion-grid>
+  <ion-row >
+    <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+    <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+    <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+  </ion-row>
+  <ion-row>
+      
+      <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+      
+  </ion-row>
+  <ion-row>
+      <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+      
+      
+  </ion-row>
+  <ion-row >
+      <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+      <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+    </ion-row>
+    <ion-row>
+        
+        <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+        <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+        <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+        
+    </ion-row>
+    <ion-row>
+        <ion-col col-4><img src="/assets/imgs/Adidas.png"></ion-col>
+        <ion-col col-4><img src="/assets/imgs/nike.jpg"></ion-col>
+        <ion-col col-4><img src="/assets/imgs/Frites.jpg"></ion-col>
+        
+        
+    </ion-row>
+</ion-grid>
+</ion-content>
